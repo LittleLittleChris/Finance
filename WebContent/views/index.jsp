@@ -207,7 +207,7 @@
 			            	{"accessPath":"PullChick","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":9,"resourceName":"发货管理","resourceOrder":0,"resourceType":"YEWUMOKUAI"},
 			            
 			            {"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":5,"resourceName":"计价管理","resourceOrder":0,"resourceType":"YEWUMOKUAI"},
-				        	{"accessPath":"EditChickType","checked":false,"delFlag":0,"parentID":5,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":11,"resourceName":"计价管理","resourceOrder":0,"resourceType":"YEWUMOKUAI"},
+				        	{"accessPath":"EditChickType","checked":false,"delFlag":0,"parentID":5,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":11,"resourceName":"运费设置","resourceOrder":0,"resourceType":"YEWUMOKUAI"},
 				       ];
 			}
             // 如果返回数据不为空，加载"业务模块"目录
