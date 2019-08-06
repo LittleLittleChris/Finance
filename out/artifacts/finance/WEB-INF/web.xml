@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>Finance-chen</display-name>
+
+	<!-- 用户 -->
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.chen.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>com.chen.servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ForgetPassword</servlet-name>
+		<servlet-class>com.chen.servlet.user.ForgetPasswordServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateAccount</servlet-name>
+		<servlet-class>com.chen.servlet.user.UpdateUserInfoServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>RegisterForNormal</servlet-name>
+		<servlet-class>com.chen.servlet.user.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>RegisterConfirm</servlet-name>
+		<servlet-class>com.chen.servlet.user.RegisterConfirmServlet</servlet-class>
+	</servlet>
+	<!-- 商品类型 -->
+	<servlet>
+		<servlet-name>EditChickType</servlet-name>
+		<servlet-class>com.chen.servlet.goods.GoodsTypeServlet</servlet-class>
+	</servlet>
+	
+	<!-- 出货 -->
+	<servlet>
+		<servlet-name>PullChick</servlet-name>
+		<servlet-class>com.chen.servlet.profit.PullChickServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>PullChicktransition</servlet-name>
+		<servlet-class>com.chen.servlet.profit.PullChicktransitionServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>PullChickConfirm</servlet-name>
+		<servlet-class>com.chen.servlet.profit.PullChickConfirmServlet</servlet-class>
+	</servlet>
+	<!-- 进货 -->
+	<servlet>
+		<servlet-name>PushChick</servlet-name>
+		<servlet-class>com.chen.servlet.profit.PushChickServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>PushChickTransition</servlet-name>
+		<servlet-class>com.chen.servlet.profit.PushChickTransitionServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>PushChickConfirm</servlet-name>
+		<servlet-class>com.chen.servlet.profit.PushChickConfirmServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ForgetPassword</servlet-name>
+		<url-pattern>/ForgetPassword</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateAccount</servlet-name>
+		<url-pattern>/UpdateAccount</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegisterForNormal</servlet-name>
+		<url-pattern>/RegisterForNormal</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegisterConfirm</servlet-name>
+		<url-pattern>/RegisterConfirm</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EditChickType</servlet-name>
+		<url-pattern>/EditChickType</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PushChick</servlet-name>
+		<url-pattern>/PushChick</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PushChickConfirm</servlet-name>
+		<url-pattern>/PushChickConfirm</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PushChickTransition</servlet-name>
+		<url-pattern>/PushChickTransition</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PullChick</servlet-name>
+		<url-pattern>/PullChick</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PullChicktransition</servlet-name>
+		<url-pattern>/PullChicktransition</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PullChickConfirm</servlet-name>
+		<url-pattern>/PullChickConfirm</url-pattern>
+	</servlet-mapping>
+
+	<mime-mapping>
+		<extension>json</extension>
+		<mime-type>application/json</mime-type>
+	</mime-mapping>
+
+	<welcome-file-list>
+		<welcome-file>/login.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>

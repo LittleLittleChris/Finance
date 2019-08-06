@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Finance-chen:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/finance</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Finance-chen" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Finance-chen/web/Web" />
+    </root>
+  </artifact>
+</component>

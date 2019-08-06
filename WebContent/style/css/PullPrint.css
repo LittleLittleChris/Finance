@@ -1,0 +1,150 @@
+@CHARSET "UTF-8";
+    *{
+        padding: 0;
+        margin:0;
+    }
+    h3{
+        text-align: center;
+        margin: 50px auto 10px;
+    }
+    h2{
+        text-align: center;
+        margin: 20px auto;
+    }
+    h4{
+        text-align: center;
+        margin: 60px auto;
+    }
+    .container{
+        font-size: 20px;
+        width: 80%;
+        min-width: 900px;
+        max-width: 1500px;
+        overflow: hidden;
+    }
+    table td{
+        padding: 6px 0 6px 0;
+    }
+    .container:after{
+        content: '';
+        visibility: hidden;
+        display: block;
+        clear: both;
+        height: 0;
+    }
+    .header{
+        margin: 20px auto;
+        width: 50%;
+        min-width: 450px;
+        border-collapse: collapse;
+        text-align: center;
+        float: right;
+        border: 1px solid black;
+    }
+    .header tr{
+        border: 1px solid black;
+    }
+    .header input,.footer input{
+        font-size: 18px;
+        text-align: center;
+        border-style: none;
+
+    }
+    .content{
+        margin: 20px auto;
+        width: 90%;
+        min-width: 450px;
+        max-width: 900px;
+        border-collapse: collapse;
+        text-align: center;
+        float: right;
+        border: 1px solid black;
+    }
+    .content tr{
+        border: 1px solid black;
+    }
+    .footer{
+        margin: 20px auto;
+        width: 50%;
+        min-width: 450px;
+        border-collapse: collapse;
+        text-align: center;
+        float: right;
+        border: 1px solid black;
+        border-left: none;
+    }
+    .footer tr{
+        border: 1px solid black;
+    }
+    .footer input{
+        text-align: center;
+        border-style: none;
+    }
+    .right{
+        text-align: right;
+    }
+    
+        .print{
+        width: 70px;
+        height: 70px;
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        overflow: hidden;
+    }
+    .print a{
+        font-size: 18px;
+        text-align: center;
+        line-height: 70px;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 70px;
+        background-color: #26c7f5;
+        color: #9480ff;
+        right: -35px;
+        position: absolute;
+        transition: 0.5s;
+    }
+    .print:hover a{
+    	cursor:pointer;
+        right: 0;
+        background-color: #9480ff;
+        color: #26c7f5;
+    }
+    .print a:active{
+        color: #f55990;
+        transition: 0.2s;
+    }
+        .containerButton{
+        width: 70px;
+        height: 70px;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        overflow: hidden;
+    }
+    .containerButton a{
+        font-size: 18px;
+        text-align: center;
+        line-height: 70px;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 70px;
+        background-color: #26c7f5;
+        color: #9480ff;
+        left: -35px;
+        position: absolute;
+        transition: 0.5s;
+    }
+    .containerButton:hover a{
+       cursor:pointer;
+        left: 0;
+        background-color: #9480ff;
+        color: #26c7f5;
+    }
+    .containerButton a:active{
+        color: #f55990;
+        transition: 0.2s;
+    }
