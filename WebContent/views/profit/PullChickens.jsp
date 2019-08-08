@@ -1,5 +1,6 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ page import="java.text.DateFormat" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%
@@ -7,7 +8,7 @@ String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 
 Date today = new Date();
-DateFormat df = DateFormat.getDateInstance();
+DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 String todayStr = df.format(today);
 %>
 
@@ -216,7 +217,7 @@ String todayStr = df.format(today);
               </tr>
               </tbody>
           </table>
-          <table class="table_detail">
+          <table class="table_detail" style="font-size: 15px">
               <tbody>
               <tr style="height: 20px">
                   <td colspan="10" style="background-color:#337FE5;height: 100%;">
@@ -234,19 +235,19 @@ String todayStr = df.format(today);
                       件数
                   </td>
                   <td style="text-align:center;">
-                      重量
+                      重量<span style="font-size: 9px">（公斤）</span>
                   </td>
                   <td style="text-align:center;">
-                      体积
+                      体积<span style="font-size: 9px">（方）</span>
                   </td>
                   <td style="text-align:center;width: 80px">
                       品类
                   </td>
                   <td style="text-align:center;">
-                      送货费
+                      送货费<span style="font-size: 9px">（元）</span>
                   </td>
                   <td style="text-align:center;">
-                      总运费
+                      总运费<span style="font-size: 9px">（元）</span>
                   </td>
                   <td style="text-align:center;width: 80px">
                       付款方式
@@ -452,18 +453,43 @@ String todayStr = df.format(today);
 <script type="text/javascript">
 
     //重量
-    $("#text_weight").keyup(function () {
+    $("#text_weight").blur(function () {
+        if(parseFloat($("#text_weight").attr("value"))<10) {
+            alert("重量不能小于10公斤!");
+            $("#text_weight").val(10);
+        }
         var amount = $("#txt3").attr("value");
+        $("#text_volume").val((0.005*$("#text_weight").attr("value")).toFixed(2));
         $("#txt2").val((amount*$("#text_weight").attr("value")).toFixed(2));
         return false;
     });
 
     //体积
-    $("#text_volume").keyup(function () {
+    $("#text_volume").blur(function () {
         var amount = $("#txt3").attr("value");
-        $("#txt2").val((amount/5*$("#text_volume").attr("value")).toFixed(2));
+        var volume = $("#text_volume").attr("value");
+        var weight = $("#text_weight").attr("value");
+        if(parseFloat(volume)<0.05) {
+            alert("体积不能小于0.05方!");
+            $("#text_volume").val(0.05);
+            volume = 0.05;
+        }
+        $("#text_weight").val((volume/0.005).toFixed(2));
+        $("#txt2").val((amount/0.005*$("#text_volume").attr("value")).toFixed(2));
         return false;
     });
+    
+    function checkMinValue() {
+        var volume = $("#text_volume").attr("value");
+        var weight = $("#text_weight").attr("value");
+        alert(volume)
+        if(parseFloat(volume)<0.05) {
+            alert("体积不能小于0.05方!");
+            $("#text_volume").val(0.05);
+            return false;
+        }
+
+    }
 
     //启用滚动条
     $(document.body).css({
@@ -511,9 +537,9 @@ String todayStr = df.format(today);
     //项点击
     $(".div_item").click(function () {
         $("#txt1").val($(this).text());
-        $("#txt2").val($(this).attr("value"));
-        $("#txt3").val($(this).attr("value"));
+        $("#txt2").val(($(this).attr("value")/1000).toFixed(2));
+        $("#txt3").val(($(this).attr("value")/1000).toFixed(2));
         $("#text_weight").val(1);
-        $("#text_volume").val(5);
+        $("#text_volume").val(0.005);
     });
 </script>

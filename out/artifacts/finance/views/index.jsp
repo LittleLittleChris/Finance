@@ -10,7 +10,7 @@
 <html lang="zh-CN">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>简单物流管理-后台系统</title>
+	<title>物流管理-后台系统</title>
 	<link href="style/authority/main_css.css" rel="stylesheet" type="text/css" />
 	<link href="style/authority/zTreeStyle.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="scripts/jquery/jquery-1.7.1.js"></script>
@@ -207,7 +207,7 @@
 			            	{"accessPath":"PullChick","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":9,"resourceName":"发货管理","resourceOrder":0,"resourceType":"YEWUMOKUAI"},
 			            
 			            {"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":5,"resourceName":"计价管理","resourceOrder":0,"resourceType":"YEWUMOKUAI"},
-				        	{"accessPath":"EditChickType","checked":false,"delFlag":0,"parentID":5,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":11,"resourceName":"计价管理","resourceOrder":0,"resourceType":"YEWUMOKUAI"},
+				        	{"accessPath":"EditChickType","checked":false,"delFlag":0,"parentID":5,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":11,"resourceName":"运费设置","resourceOrder":0,"resourceType":"YEWUMOKUAI"},
 				       ];
 			}
             // 如果返回数据不为空，加载"业务模块"目录
@@ -236,7 +236,6 @@
 <body onload="getDate01()">
     <div id="top">
 		<div id="top_logo">
-			<img alt="logo" src="images/common/logo.jpg" width="274" height="49" style="vertical-align:middle;">
 		</div>
 		<div id="top_links">
 			<div id="top_op">
