@@ -78,7 +78,7 @@ String todayStr = df.format(today);
         border: 1px  solid #FF4500;
     }
 
-    #div_txt {
+    #div_txt,#div_txt2 {
         position: relative;
         width: 100%;
     }
@@ -132,7 +132,7 @@ String todayStr = df.format(today);
   <c:when test="${sessionScope.userInfo eq null}">
     <p>请先<a href="Logout">登录</a></p>
   </c:when>
-  
+
   <c:when test="${requestScope.regard eq null}">
   <p>请按顺序<a href="views/index.jsp">访问</a></p>
   </c:when>
@@ -168,7 +168,7 @@ String todayStr = df.format(today);
                   </td>
                   <td style="border-collapse: collapse;text-align:center;width: 120px;border:1px solid #A9A9A9;border-bottom-style:none;">
                       <span id="div_txt">
-                          <input type="text" id="txt1" />
+                          <input type="text" id="txt1" autocomplete="off"/>
                           <!--模糊匹配窗口-->
                           <div id="div_items">
                               <c:forEach items="${requestScope.goodsTypes}" var="type">
@@ -178,8 +178,8 @@ String todayStr = df.format(today);
                       </span>
                   </td>
                   <td style="border-collapse: collapse;text-align:center;width: 120px;border:1px solid #A9A9A9;border-right-style:none;border-bottom-style:none;">
-                      <span id="div_txt">
-                          <input type="text" id="txt_city" />
+                      <span id="div_txt2">
+                          <input type="text" id="txt_city" autocomplete="off"/>
                           <div id="div_cities">
                           </div>
                       </span>
@@ -578,7 +578,7 @@ String todayStr = df.format(today);
         intValue();
         findAllDepts();
     });
-    
+
     function intValue() {
         v_weight = $("#text_weight").attr("value");
         v_volume = $("#text_volume").attr("value");
@@ -588,7 +588,7 @@ String todayStr = df.format(today);
         $.ajax({
             async : false,    //表示请求是否异步处理
             type : "post",    //请求类型
-            url : "/Logistics/FormSubmit",//请求的 URL地址
+            url : "<%=path%>/FormSubmit",//请求的 URL地址
             data : "cityName=" + $("#txt1").attr("value"),
             dataType : "text",//返回的数据类型
             success: function (data) {
