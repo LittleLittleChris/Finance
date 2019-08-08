@@ -98,7 +98,27 @@ String todayStr = df.format(today);
         z-index: 1;
     }
 
+    #div_cities {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        border: 1px solid #66afe9;
+        border-top: 0px;
+        overflow: auto;
+        display: none;
+        z-index: 1;
+    }
+
     .div_item {
+        width: 100%;
+        height: 20px;
+        margin-top: 1px;
+        font-size: 13px;
+        line-height: 20px;
+        background-color: white;
+    }
+
+    .div_city {
         width: 100%;
         height: 20px;
         margin-top: 1px;
@@ -158,7 +178,11 @@ String todayStr = df.format(today);
                       </span>
                   </td>
                   <td style="border-collapse: collapse;text-align:center;width: 120px;border:1px solid #A9A9A9;border-right-style:none;border-bottom-style:none;">
-                      <input type="text"></input>
+                      <span id="div_txt">
+                          <input type="text" id="txt_city" />
+                          <div id="div_cities">
+                          </div>
+                      </span>
                   </td>
               </tr>
               </tbody>
@@ -452,6 +476,9 @@ String todayStr = df.format(today);
 
 <script type="text/javascript">
 
+    var v_weight = 0;
+    var v_volume = 0;
+
     //重量
     $("#text_weight").blur(function () {
         if(parseFloat($("#text_weight").attr("value"))<10) {
@@ -459,8 +486,15 @@ String todayStr = df.format(today);
             $("#text_weight").val(10);
         }
         var amount = $("#txt3").attr("value");
-        $("#text_volume").val((0.005*$("#text_weight").attr("value")).toFixed(2));
-        $("#txt2").val((amount*$("#text_weight").attr("value")).toFixed(2));
+
+        var amount_new = (amount*$("#text_weight").attr("value")).toFixed(2);
+        //alert(v_weight);
+        //alert($("#text_weight").attr("value"));
+        if($("#text_weight").attr("value")>v_weight) {
+            $("#txt2").val(amount_new);
+            $("#text_volume").val((0.005*$("#text_weight").attr("value")).toFixed(2));
+        }
+        intValue();
         return false;
     });
 
@@ -468,37 +502,37 @@ String todayStr = df.format(today);
     $("#text_volume").blur(function () {
         var amount = $("#txt3").attr("value");
         var volume = $("#text_volume").attr("value");
-        var weight = $("#text_weight").attr("value");
         if(parseFloat(volume)<0.05) {
             alert("体积不能小于0.05方!");
             $("#text_volume").val(0.05);
             volume = 0.05;
         }
-        $("#text_weight").val((volume/0.005).toFixed(2));
-        $("#txt2").val((amount/0.005*$("#text_volume").attr("value")).toFixed(2));
-        return false;
-    });
-    
-    function checkMinValue() {
-        var volume = $("#text_volume").attr("value");
-        var weight = $("#text_weight").attr("value");
-        alert(volume)
-        if(parseFloat(volume)<0.05) {
-            alert("体积不能小于0.05方!");
-            $("#text_volume").val(0.05);
-            return false;
+
+        var amount_new = (amount/0.005*$("#text_volume").attr("value")).toFixed(2);
+        if($("#text_volume").attr("value")>v_volume) {
+            $("#txt2").val(amount_new);
+            $("#text_weight").val((volume/0.005).toFixed(2));
         }
 
-    }
+        intValue();
+        return false;
+    });
 
     //启用滚动条
     $(document.body).css({
         "overflow-x":"auto",
         "overflow-y":"auto"
     });
+
     //弹出列表框
     $("#txt1").click(function () {
         $("#div_items").css('display', 'block');
+        return false;
+    });
+
+    //弹出列表框
+    $("#txt_city").click(function () {
+        $("#div_cities").css('display', 'block');
         return false;
     });
 
@@ -541,5 +575,29 @@ String todayStr = df.format(today);
         $("#txt3").val(($(this).attr("value")/1000).toFixed(2));
         $("#text_weight").val(1);
         $("#text_volume").val(0.005);
+        intValue();
+        findAllDepts();
     });
+    
+    function intValue() {
+        v_weight = $("#text_weight").attr("value");
+        v_volume = $("#text_volume").attr("value");
+    }
+
+    function findAllDepts() {
+        $.ajax({
+            async : false,    //表示请求是否异步处理
+            type : "post",    //请求类型
+            url : "/Logistics/FormSubmit",//请求的 URL地址
+            data : "cityName=" + $("#txt1").attr("value"),
+            dataType : "text",//返回的数据类型
+            success: function (data) {
+                $("#div_cities").html(data);
+                $(".div_city").click(function () {
+                    $("#txt_city").val($(this).text());
+                    $("#div_cities").css('display', 'none');
+                });
+            }
+        });
+    };
 </script>

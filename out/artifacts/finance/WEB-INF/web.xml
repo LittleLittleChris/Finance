@@ -63,6 +63,10 @@
 		<servlet-name>PushChickConfirm</servlet-name>
 		<servlet-class>com.chen.servlet.profit.PushChickConfirmServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>FormSubmit</servlet-name>
+		<servlet-class>com.chen.servlet.profit.FormSubmit</servlet-class>
+	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>Login</servlet-name>
@@ -115,6 +119,10 @@
 	<servlet-mapping>
 		<servlet-name>PullChickConfirm</servlet-name>
 		<url-pattern>/PullChickConfirm</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FormSubmit</servlet-name>
+		<url-pattern>/FormSubmit</url-pattern>
 	</servlet-mapping>
 
 	<mime-mapping>
