@@ -23,7 +23,8 @@ public class CityDao {
 			String sql = "SELECT * from city c1\n" +
 					"left join city c2 on c1.parent_id=c2.id\n" +
 					"where c2.name like '%"+ cityName +"%' order by c1.id desc";
-			rs = stmt.executeQuery(sql);
+            System.out.println(sql);
+            rs = stmt.executeQuery(sql);
 			while (rs.next()) {
 				City city = new City();
 				city.setName(rs.getString("name"));

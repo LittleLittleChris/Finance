@@ -14,7 +14,7 @@
 <html lang="zh-CN">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>物流管理-后台系统</title>
+	<title>智联物流服务平台</title>
 	<link href="style/authority/main_css.css" rel="stylesheet" type="text/css" />
 	<link href="style/authority/zTreeStyle.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="scripts/jquery/jquery-1.7.1.js"></script>

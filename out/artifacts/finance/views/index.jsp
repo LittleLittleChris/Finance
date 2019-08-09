@@ -1,7 +1,11 @@
 ﻿ <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+ <%@ page import="com.chen.pojo.UserInfo" %>
+ <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%
+	UserInfo userInfo = (UserInfo) session.getAttribute("userInfo");
+	String userName = userInfo.getUsername();
+	System.out.println(userInfo.getUsername());
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
@@ -10,7 +14,7 @@
 <html lang="zh-CN">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>物流管理-后台系统</title>
+	<title>智联物流服务平台</title>
 	<link href="style/authority/main_css.css" rel="stylesheet" type="text/css" />
 	<link href="style/authority/zTreeStyle.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="scripts/jquery/jquery-1.7.1.js"></script>
@@ -202,13 +206,21 @@
 				        	{"accessPath":"","checked":false,"delFlag":0,"parentID":7,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":13,"resourceName":"评论查询","resourceOrder":0,"resourceType":"QITAMOKUAI"},
 			            ];
 			}else{
-				data = [
-			            {"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":3,"resourceName":"物流管理","resourceOrder":0,"resourceType":"YEWUMOKUAI"},
-			            	{"accessPath":"PullChick","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":9,"resourceName":"发货管理","resourceOrder":0,"resourceType":"YEWUMOKUAI"},
-			            
-			            {"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":5,"resourceName":"计价管理","resourceOrder":0,"resourceType":"YEWUMOKUAI"},
-				        	{"accessPath":"EditChickType","checked":false,"delFlag":0,"parentID":5,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":11,"resourceName":"运费设置","resourceOrder":0,"resourceType":"YEWUMOKUAI"},
-				       ];
+                if("<%=userName%>" == "admin") {
+                    data = [
+                        {"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":3,"resourceName":"物流管理","resourceOrder":0,"resourceType":"YEWUMOKUAI"},
+                        {"accessPath":"PullChick","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":9,"resourceName":"发货管理","resourceOrder":0,"resourceType":"YEWUMOKUAI"},
+
+                        {"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":5,"resourceName":"计价管理","resourceOrder":0,"resourceType":"YEWUMOKUAI"},
+                        {"accessPath":"EditChickType","checked":false,"delFlag":0,"parentID":5,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":11,"resourceName":"运费设置","resourceOrder":0,"resourceType":"YEWUMOKUAI"},
+                    ];
+                }else {
+                    data = [
+                        {"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":3,"resourceName":"物流管理","resourceOrder":0,"resourceType":"YEWUMOKUAI"},
+                        {"accessPath":"PullChick","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":9,"resourceName":"发货管理","resourceOrder":0,"resourceType":"YEWUMOKUAI"}
+                    ];
+				}
+
 			}
             // 如果返回数据不为空，加载"业务模块"目录
             if(data != null){

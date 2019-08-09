@@ -6,9 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d93cdce-8327-43d6-a835-a88854830f3d" name="Default Changelist" comment="公式修改">
+    <list default="true" id="8d93cdce-8327-43d6-a835-a88854830f3d" name="Default Changelist" comment="账号权限控制">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/views/index.jsp" afterPath="$PROJECT_DIR$/WebContent/views/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/views/profit/PullChickens.jsp" afterPath="$PROJECT_DIR$/WebContent/views/profit/PullChickens.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/finance/views/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/finance/views/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chen/dao/CityDao.java" afterPath="$PROJECT_DIR$/src/com/chen/dao/CityDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chen/dao/GoodsTypeDao.java" afterPath="$PROJECT_DIR$/src/com/chen/dao/GoodsTypeDao.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,27 +30,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PullChickens.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PullChickens.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebContent/views/profit/PullChickens.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9994">
-              <caret line="526" column="11" lean-forward="true" selection-start-line="526" selection-start-column="11" selection-end-line="526" selection-end-column="11" />
+            <state relative-caret-position="-8492">
+              <caret line="142" column="87" lean-forward="false" selection-start-line="142" selection-start-column="79" selection-end-line="142" selection-end-column="87" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserInfoDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chen/dao/UserInfoDao.java">
+      <file leaf-file-name="PullChickServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/chen/servlet/profit/PullChickServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+            <state relative-caret-position="125">
+              <caret line="42" column="66" lean-forward="true" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodsTypeService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/chen/service/GoodsTypeService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodsTypeDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/chen/dao/GoodsTypeDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="50" column="50" lean-forward="false" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
               <folding>
-                <marker date="1565056083853" expanded="true" signature="514:595" ph="update userI... " />
-                <marker date="1565056083853" expanded="true" signature="1089:1111" ph="select * fro... userInfo" />
-                <marker date="1565056083853" expanded="true" signature="1952:1988" ph="select disti... userInfo" />
-                <marker date="1565056083853" expanded="true" signature="2533:2555" ph="select * fro... userInfo" />
-                <marker date="1565056083853" expanded="true" signature="3175:3414" ph="insert into userInfo... " />
+                <marker date="1565334804190" expanded="true" signature="691:852" ph="insert into goodsType... " />
+                <marker date="1565334804190" expanded="true" signature="1375:1415" ph="select * fro... goodsType" />
+                <marker date="1565334804190" expanded="true" signature="2151:2250" ph="delete from " />
               </folding>
             </state>
           </provider>
@@ -62,18 +84,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/views/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="229" column="28" lean-forward="true" selection-start-line="229" selection-start-column="28" selection-end-line="229" selection-end-column="28" />
+            <state relative-caret-position="240">
+              <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
               <folding>
-                <marker date="1565329308828" expanded="true" signature="4449:4455" ph="&amp;nbsp;" />
-                <marker date="1565329308828" expanded="true" signature="4456:4462" ph="&amp;nbsp;" />
-                <marker date="1565329308828" expanded="true" signature="4475:4488" ph="..." />
-                <marker date="1565329308828" expanded="true" signature="4575:4581" ph="&amp;nbsp;" />
-                <marker date="1565329308828" expanded="true" signature="4582:4588" ph="&amp;nbsp;" />
-                <marker date="1565329308828" expanded="true" signature="4601:4614" ph="..." />
+                <marker date="1565343731085" expanded="true" signature="4448:4454" ph="&amp;nbsp;" />
+                <marker date="1565343731085" expanded="true" signature="4455:4461" ph="&amp;nbsp;" />
+                <marker date="1565343731085" expanded="true" signature="4474:4487" ph="..." />
+                <marker date="1565343731085" expanded="true" signature="4574:4580" ph="&amp;nbsp;" />
+                <marker date="1565343731085" expanded="true" signature="4581:4587" ph="&amp;nbsp;" />
+                <marker date="1565343731085" expanded="true" signature="4600:4613" ph="..." />
               </folding>
             </state>
           </provider>
@@ -93,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/chen/service/CityService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+              <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -102,49 +124,14 @@
       <file leaf-file-name="CityDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chen/dao/CityDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+            <state relative-caret-position="228">
+              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
               <folding>
                 <element signature="e#454#460#0" expanded="true" />
-                <marker date="1565254015304" expanded="true" signature="560:567" ph="SELECT c2.* city" />
-                <marker date="1565254015304" expanded="true" signature="560:634" ph="SELECT * fro... city" />
-                <marker date="1565254015304" expanded="true" signature="560:665" ph="SELECT * fro... city" />
-                <marker date="1565254015304" expanded="true" signature="560:701" ph="select * fro... city" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="City.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chen/pojo/City.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-              <folding>
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#239#240#0" expanded="true" />
-                <element signature="e#276#277#0" expanded="true" />
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
-                <element signature="e#382#383#0" expanded="true" />
-                <element signature="e#405#406#0" expanded="true" />
-                <element signature="e#434#435#0" expanded="true" />
-                <element signature="e#456#457#0" expanded="true" />
-                <element signature="e#498#499#0" expanded="true" />
-                <element signature="e#529#530#0" expanded="true" />
-                <element signature="e#564#565#0" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-                <element signature="e#640#641#0" expanded="true" />
-                <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#703#704#0" expanded="true" />
-                <element signature="e#722#723#0" expanded="true" />
-                <element signature="e#758#759#0" expanded="true" />
-                <element signature="e#783#784#0" expanded="true" />
-                <element signature="e#806#807#0" expanded="true" />
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="true" />
-                <element signature="e#871#872#0" expanded="true" />
+                <marker date="1565334631421" expanded="true" signature="560:567" ph="SELECT c2.* city" />
+                <marker date="1565334631421" expanded="true" signature="560:634" ph="SELECT * fro... city" />
+                <marker date="1565334631421" expanded="true" signature="560:665" ph="SELECT * fro... city" />
+                <marker date="1565334631421" expanded="true" signature="560:701" ph="select * fro... city" />
               </folding>
             </state>
           </provider>
@@ -153,22 +140,9 @@
       <file leaf-file-name="FormSubmit.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chen/servlet/profit/FormSubmit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="38" column="72" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="72" />
+            <state relative-caret-position="197">
+              <caret line="43" column="56" lean-forward="false" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrintWriter.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/io/PrintWriter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8227">
-              <caret line="471" column="16" lean-forward="false" selection-start-line="471" selection-start-column="16" selection-end-line="471" selection-end-column="16" />
-              <folding>
-                <element signature="e#15583#15584#0" expanded="true" />
-                <element signature="e#15622#15623#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -210,6 +184,7 @@
       <find>txt3</find>
       <find>txt1</find>
       <find>data</find>
+      <find>goodsTypes</find>
       <find>setting</find>
     </findStrings>
     <replaceStrings>
@@ -237,7 +212,6 @@
         <option value="$PROJECT_DIR$/WebContent/style/css/editChickType.css" />
         <option value="$PROJECT_DIR$/WebContent/views/good/EditGoodsType.jsp" />
         <option value="$PROJECT_DIR$/src/com/chen/servlet/goods/GoodsTypeServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/chen/dao/GoodsTypeDao.java" />
         <option value="$PROJECT_DIR$/src/com/chen/pojo/Paging.java" />
         <option value="$PROJECT_DIR$/WebContent/introduce.html" />
         <option value="$PROJECT_DIR$/src/com/chen/util/JDBCUtils.java" />
@@ -250,8 +224,9 @@
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/chen/pojo/City.java" />
         <option value="$PROJECT_DIR$/src/com/chen/service/CityService.java" />
-        <option value="$PROJECT_DIR$/src/com/chen/dao/CityDao.java" />
         <option value="$PROJECT_DIR$/src/com/chen/servlet/profit/FormSubmit.java" />
+        <option value="$PROJECT_DIR$/src/com/chen/dao/CityDao.java" />
+        <option value="$PROJECT_DIR$/src/com/chen/dao/GoodsTypeDao.java" />
         <option value="$PROJECT_DIR$/WebContent/views/profit/PullChickens.jsp" />
         <option value="$PROJECT_DIR$/WebContent/views/index.jsp" />
       </list>
@@ -337,6 +312,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="chen" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Finance-chen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Finance-chen" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="chen" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Finance-chen" type="b2602c69:ProjectViewProjectNode" />
@@ -574,7 +556,7 @@
       <workItem from="1564986304087" duration="4377000" />
       <workItem from="1565056086666" duration="2766000" />
       <workItem from="1565227323775" duration="18550000" />
-      <workItem from="1565316364837" duration="2149000" />
+      <workItem from="1565316364837" duration="5743000" />
     </task>
     <task id="LOCAL-00001" summary="menu edit">
       <created>1565056230579</created>
@@ -604,11 +586,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565257912666</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="账号权限控制">
+      <created>1565329381726</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1565329381726</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99822000" />
+    <option name="totallyTimeSpent" value="103416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -631,7 +620,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18933624" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50272036" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18017058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -656,7 +645,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="menu edit" />
     <MESSAGE value="公式修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="公式修改" />
+    <MESSAGE value="账号权限控制" />
+    <option name="LAST_COMMIT_MESSAGE" value="账号权限控制" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -811,13 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chen/service/GoodsTypeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chen/service/PullChickService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -829,13 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chen/dao/GoodsTypeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -898,14 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chen/servlet/profit/PullChickServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/views/good/EditGoodsType.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
@@ -961,17 +929,9 @@
         <state relative-caret-position="8227">
           <caret line="471" column="16" lean-forward="false" selection-start-line="471" selection-start-column="16" selection-end-line="471" selection-end-column="16" />
           <folding>
-            <element signature="e#15583#15584#0" expanded="true" />
-            <element signature="e#15622#15623#0" expanded="true" />
+            <element signature="e#15583#15584#0" expanded="false" />
+            <element signature="e#15622#15623#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chen/service/CityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -980,53 +940,31 @@
         <state relative-caret-position="152">
           <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
           <folding>
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="false" />
+            <element signature="e#239#240#0" expanded="false" />
+            <element signature="e#276#277#0" expanded="false" />
+            <element signature="e#299#300#0" expanded="false" />
+            <element signature="e#327#328#0" expanded="false" />
+            <element signature="e#345#346#0" expanded="false" />
+            <element signature="e#382#383#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
+            <element signature="e#434#435#0" expanded="false" />
+            <element signature="e#456#457#0" expanded="false" />
+            <element signature="e#498#499#0" expanded="false" />
+            <element signature="e#529#530#0" expanded="false" />
+            <element signature="e#564#565#0" expanded="false" />
+            <element signature="e#589#590#0" expanded="false" />
+            <element signature="e#640#641#0" expanded="false" />
+            <element signature="e#677#678#0" expanded="false" />
+            <element signature="e#703#704#0" expanded="false" />
+            <element signature="e#722#723#0" expanded="false" />
+            <element signature="e#758#759#0" expanded="false" />
+            <element signature="e#783#784#0" expanded="false" />
+            <element signature="e#806#807#0" expanded="false" />
+            <element signature="e#822#823#0" expanded="false" />
+            <element signature="e#852#853#0" expanded="false" />
+            <element signature="e#871#872#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chen/dao/CityDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding>
-            <element signature="e#454#460#0" expanded="true" />
-            <marker date="1565254015304" expanded="true" signature="560:567" ph="SELECT c2.* city" />
-            <marker date="1565254015304" expanded="true" signature="560:634" ph="SELECT * fro... city" />
-            <marker date="1565254015304" expanded="true" signature="560:665" ph="SELECT * fro... city" />
-            <marker date="1565254015304" expanded="true" signature="560:701" ph="select * fro... city" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/views/profit/PullChickens.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9994">
-          <caret line="526" column="11" lean-forward="true" selection-start-line="526" selection-start-column="11" selection-end-line="526" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,14 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chen/servlet/profit/FormSubmit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="38" column="72" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/scripts/jquery/jquery-1.7.1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-567">
@@ -1068,18 +998,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chen/servlet/profit/FormSubmit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="43" column="56" lean-forward="false" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chen/service/CityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chen/dao/CityDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding>
+            <element signature="e#454#460#0" expanded="true" />
+            <marker date="1565334631421" expanded="true" signature="560:567" ph="SELECT c2.* city" />
+            <marker date="1565334631421" expanded="true" signature="560:634" ph="SELECT * fro... city" />
+            <marker date="1565334631421" expanded="true" signature="560:665" ph="SELECT * fro... city" />
+            <marker date="1565334631421" expanded="true" signature="560:701" ph="select * fro... city" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chen/servlet/profit/PullChickServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="42" column="66" lean-forward="true" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chen/service/GoodsTypeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chen/dao/GoodsTypeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="50" column="50" lean-forward="false" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+          <folding>
+            <marker date="1565334804190" expanded="true" signature="691:852" ph="insert into goodsType... " />
+            <marker date="1565334804190" expanded="true" signature="1375:1415" ph="select * fro... goodsType" />
+            <marker date="1565334804190" expanded="true" signature="2151:2250" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="229" column="28" lean-forward="true" selection-start-line="229" selection-start-column="28" selection-end-line="229" selection-end-column="28" />
+        <state relative-caret-position="240">
+          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding>
-            <marker date="1565329308828" expanded="true" signature="4449:4455" ph="&amp;nbsp;" />
-            <marker date="1565329308828" expanded="true" signature="4456:4462" ph="&amp;nbsp;" />
-            <marker date="1565329308828" expanded="true" signature="4475:4488" ph="..." />
-            <marker date="1565329308828" expanded="true" signature="4575:4581" ph="&amp;nbsp;" />
-            <marker date="1565329308828" expanded="true" signature="4582:4588" ph="&amp;nbsp;" />
-            <marker date="1565329308828" expanded="true" signature="4601:4614" ph="..." />
+            <marker date="1565343731085" expanded="true" signature="4448:4454" ph="&amp;nbsp;" />
+            <marker date="1565343731085" expanded="true" signature="4455:4461" ph="&amp;nbsp;" />
+            <marker date="1565343731085" expanded="true" signature="4474:4487" ph="..." />
+            <marker date="1565343731085" expanded="true" signature="4574:4580" ph="&amp;nbsp;" />
+            <marker date="1565343731085" expanded="true" signature="4581:4587" ph="&amp;nbsp;" />
+            <marker date="1565343731085" expanded="true" signature="4600:4613" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/views/profit/PullChickens.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8492">
+          <caret line="142" column="87" lean-forward="false" selection-start-line="142" selection-start-column="79" selection-end-line="142" selection-end-column="87" />
+          <folding />
         </state>
       </provider>
     </entry>

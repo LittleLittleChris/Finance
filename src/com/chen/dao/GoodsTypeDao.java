@@ -48,7 +48,7 @@ public class GoodsTypeDao {
 		try {
 			conn = JDBCUtils.getConnection();
 			stmt = conn.createStatement();
-			String sql = "select * from goodsType where username='" + username + "' order by id desc";
+			String sql = "select * from goodsType order by id desc";
 			rs = stmt.executeQuery(sql);
 			while (rs.next()) {
 				GoodsType goodsType = new GoodsType();
