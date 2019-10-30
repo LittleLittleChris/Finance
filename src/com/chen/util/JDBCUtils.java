@@ -16,7 +16,7 @@ import java.sql.SQLException;
 public class JDBCUtils {
 
 	static String className = "com.mysql.jdbc.Driver";
-	static String url = "jdbc:mysql://149.129.101.113:3306/financesystem?useUnicode=true&characterEncoding=utf8&useSSL=false";
+	static String url = "jdbc:mysql://db.speedclub.xyz:3306/financesystem?useUnicode=true&characterEncoding=utf8&useSSL=false";
 	static String user = "root";// 用户名
 	static String password = "110110119";// 密码
 

@@ -140,7 +140,7 @@ String todayStr = df.format(today);
 
   <div class="container">
   <form>
-  <div style="width: 900px;font-size:20px;font-weight:bold;text-align: center">宇鑫物流</div>
+  <div style="width: 900px;font-size:20px;font-weight:bold;text-align: center">智联物流服务平台</div>
       <br/>
       <br/>
           <table class="table_detail" autocomplete="off">
@@ -161,7 +161,7 @@ String todayStr = df.format(today);
               </tr>
               <tr>
                   <td style="border-top-style:none;text-align: center                      ">
-                      查询网址：<a href="http://www.yx56.cn/">www.yx56.cn</a>
+
                   </td>
                   <td style="border-collapse: collapse;text-align:center;width: 120px;border:1px solid #A9A9A9;border-right-style:none;border-bottom-style:none;">
                       <input type="text"></input>
@@ -398,7 +398,7 @@ String todayStr = df.format(today);
               </tr>
               <tr>
                   <td colspan="3">
-                      制单员：&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 收银员： &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 发货地址：山东省嘉祥县大张楼镇滨湖社区<br />
+                      制单员：&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 收银员： &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 发货地址：山东省嘉祥县<br />
                   </td>
               </tr>
               </tbody>

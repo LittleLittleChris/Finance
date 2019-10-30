@@ -4,10 +4,10 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="Finance-chen" />
+          <element id="module-output" name="Finance" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="Finance-chen/web/Web" />
+      <element id="javaee-facet-resources" facet="Finance/web/Web" />
     </root>
   </artifact>
 </component>
